@@ -50,4 +50,7 @@ C-y 最後に消去した文字を挿入（再入）
 
 C-x u もしくは C-_ 取り消し（undo）
 
+C-x C-f foo fooというファイルを作成
+C-x C-s ファイルのセーブ
+
 C-x C-c Emacsの終了
