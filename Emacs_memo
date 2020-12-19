@@ -50,7 +50,18 @@ C-y 最後に消去した文字を挿入（再入）
 
 C-x u もしくは C-_ 取り消し（undo）
 
+  拡張コマンド
+  C-x 文字による拡張
+  M-x 名前による拡張
+
 C-x C-f foo fooというファイルを作成
 C-x C-s ファイルのセーブ
+M-x recover file<returnキー> 自動セーブされた編集を回復
+
+C-x b foo fooというバッファに移動
+
+M-x repl s<returnキー>置換する対象の文字<returnキー>置換後の文字<returnキー>
+
+M-x ***-mode ***モードに切り替える
 
 C-x C-c Emacsの終了
