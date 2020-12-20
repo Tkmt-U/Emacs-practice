@@ -60,8 +60,18 @@ M-x recover file<returnキー> 自動セーブされた編集を回復
 
 C-x b foo fooというバッファに移動
 
-M-x repl s<returnキー>置換する対象の文字<returnキー>置換後の文字<returnキー>
+M-x repl s<returnキー>置換前の文字<returnキー>置換後の文字<returnキー>
 
 M-x ***-mode ***モードに切り替える
+
+C-o 改行
+
+C-s カーソルの位置以降を検索
+C-r カードルの位置以前を検索
+
+C-x * ウインドウを*個に分割
+C-M-v 他のウインドウをスクロール
+C-x o 他のウインドウにカーソルを移動
+C-x 4 C-f 入力したファイルを作成し、分割したウインドウに表示
 
 C-x C-c Emacsの終了
