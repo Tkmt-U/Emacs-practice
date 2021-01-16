@@ -1,0 +1,43 @@
+項目はここから(全角スペースの可視化まで、それ以降はオリジナル)
+  https://qiita.com/jnchito/items/0ad568263f3419775d33
+
+# シンタックスハイライトを設定する
+# 複数行の一括コメントアウト、コメント解除
+# 矩形選択・矩形編集
+# タブキーによるインデント幅の設定
+M-x customize-option
+  tab-width
+  8 --> 2
+
+# endキーワードの自動入力、自動インデント
+# 複数ファイルの同時編集、タブ表示
+# ウインドウの分割
+# ファイルツリーの表示
+# インデントの可視化
+
+# やる気の出るカラースキームや背景画像
+deep-blue
+  https://github.com/emacs-jp/replace-colorthemes/blob/master/deep-blue-theme.el
+色々なテーマ
+  https://github.com/emacs-jp/replace-colorthemes/blob/master/screenshots.md
+
+# 全角スペースの可視化
+  https://konbu13.hatenablog.com/entry/2014/04/01/203857
+
+以下、オリジナル
+  ネタはここから
+    https://qiita.com/Ladicle/items/feb5f9dce9adf89652cf
+
+# minimap
+  https://github.com/dengste/minimap
+ここ参考に https://qiita.com/betweens/items/ae85bd9bcf8ae48ea7e2
+M-x package-install
+  minimap
+~/.emacs.d/init.el に追記
+  (require 'minimap)
+M-x customize-group
+  minimap
+
+https://github.com/emacs-dashboard/emacs-dashboard
+https://github.com/abo-abo/hydra
+https://github.com/Fanael/rainbow-delimiters
