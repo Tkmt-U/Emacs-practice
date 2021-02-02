@@ -4,10 +4,12 @@
 # シンタックスハイライトを設定する
 # 複数行の一括コメントアウト、コメント解除
 # 矩形選択・矩形編集
+  C-RET
+
 # タブキーによるインデント幅の設定
-M-x customize-option
-  tab-width
-  8 --> 2
+  M-x customize-option
+    tab-width
+    8 --> 2
 
 # endキーワードの自動入力、自動インデント
 # 複数ファイルの同時編集、タブ表示
@@ -16,10 +18,11 @@ M-x customize-option
 # インデントの可視化
 
 # やる気の出るカラースキームや背景画像
-deep-blue
-  https://github.com/emacs-jp/replace-colorthemes/blob/master/deep-blue-theme.el
-色々なテーマ
-  https://github.com/emacs-jp/replace-colorthemes/blob/master/screenshots.md
+  deep-blue
+    https://github.com/emacs-jp/replace-colorthemes/blob/master/deep-blue-theme.el
+  色々なテーマ
+    https://github.com/emacs-jp/replace-colorthemes/blob/master/screenshots.md
+  madhat2r
 
 # 全角スペースの可視化
   https://konbu13.hatenablog.com/entry/2014/04/01/203857
@@ -30,14 +33,32 @@ deep-blue
 
 # minimap
   https://github.com/dengste/minimap
-ここ参考に https://qiita.com/betweens/items/ae85bd9bcf8ae48ea7e2
-M-x package-install
-  minimap
-~/.emacs.d/init.el に追記
-  (require 'minimap)
-M-x customize-group
-  minimap
+  ここ参考に https://qiita.com/betweens/items/ae85bd9bcf8ae48ea7e2
+  M-x minimap-mode で切り替え
+
 
 https://github.com/emacs-dashboard/emacs-dashboard
 https://github.com/abo-abo/hydra
-https://github.com/Fanael/rainbow-delimiters
+
+# rainbow-delimiters
+  (括弧を色で区別化)
+  https://github.com/Fanael/rainbow-delimiters
+
+# auto-complete
+  https://www.hiroom2.com/2015/09/19/emacsのauto-completeパッケージの使い方/
+
+ruby
+https://qiita.com/hiconyan/items/
+https://qiita.com/kod314/items/9a56983f0d70f57420b1
+http://blog.10rane.com/2014/09/01/set-up-ruby-mode-of-emacs/
+https://nantonaku-shiawase.hatenablog.com/entry/2016/01/19/223036
+xmpfilter
+what_methods
+
+python
+https://qiita.com/katsuNakajima/items/df4ace3c7b7078f5a530
+https://github.com/emacsmirror/python-mode
+https://github.com/palantir/python-language-server
+
+https://masutaka.net/chalow/2009-06-26-1.html
+http://www.haun.org/kent/lisp1/1.html
