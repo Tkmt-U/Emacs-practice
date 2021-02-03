@@ -1,0 +1,11 @@
+http://www.haun.org/kent/lisp1/
+https://qiita.com/eggc/items/8722d8883ebf1d9446da
+http://www.math.s.chiba-u.ac.jp/%7Ematsu/lisp/emacs-lisp-intro-jp.html#SEC_Top
+
+ドット対
+(x . y)
+	 リスト(アトムではない)
+(cons 1 2)
+			-->(1 . 2) 左:car部 右:cdr部
+
+quote
