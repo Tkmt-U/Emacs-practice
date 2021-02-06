@@ -19,6 +19,14 @@ http://www.math.s.chiba-u.ac.jp/%7Ematsu/lisp/emacs-lisp-intro-jp.html#SEC_Top
 			(変数xに1が入る)
 
 if
+Emacsでは、「偽」以外の値はすべて「真」
+偽 = nil
+(if 条件 真の場合の返り値 偽の場合の返り値)
+	 例
+	 (if x 1 2)
+	 		 -->1
+	 (if nil 1 2)
+	 		 -->2
 
 
 ドット対
