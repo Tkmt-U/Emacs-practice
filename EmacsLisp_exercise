@@ -13,6 +13,14 @@ http://www.math.s.chiba-u.ac.jp/%7Ematsu/lisp/emacs-lisp-intro-jp.html#SEC_Top
 		 -->50
 		 (11 - 1) * (5 / 1)
 
+変数
+(setq x 1)
+			-->1
+			(変数xに1が入る)
+
+if
+
+
 ドット対
 (x . y)
 	 リスト(アトムではない)
