@@ -28,6 +28,15 @@ Emacsでは、「偽」以外の値はすべて「真」
 	 (if nil 1 2)
 	 		 -->2
 
+progn
+引数を左から順に評価する(だけ)
+	例
+	(if hoge (progn (setq x 1) (setq y 2))
+					 (progn (setq x 0) (setq y 0)))
+					 -->もしhogeがnilでないなら、xに1、yに2を代入、nilならxに0、yに0を代入する
+cond
+要はif-elsif-end
+
 
 ドット対
 (x . y)
