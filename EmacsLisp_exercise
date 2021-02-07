@@ -36,6 +36,18 @@ progn
 					 -->もしhogeがnilでないなら、xに1、yに2を代入、nilならxに0、yに0を代入する
 cond
 要はif-elsif-end
+	例
+	(cond (hoge (setq x 1) (setq y 2))
+				(t (setq x 0) (setq y 0)))
+				-->もしhogeが真なら、xに1、yに2を代入、tが真ならxに0、yに0を代入する
+				(tは「常に真」を表す)
+				
+	(cond (t (setq x 1))
+				(t (setq x 0)))
+				-->1
+				(最初の条件が真のため、そこで処理が終わる)
+
+let
 
 
 ドット対
