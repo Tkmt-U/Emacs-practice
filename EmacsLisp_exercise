@@ -1,6 +1,8 @@
 http://www.haun.org/kent/lisp1/
 https://qiita.com/eggc/items/8722d8883ebf1d9446da
 http://www.math.s.chiba-u.ac.jp/%7Ematsu/lisp/emacs-lisp-intro-jp.html#SEC_Top
+http://www.takuichi.net/hobby/symbolic/lisp/build-in.html
+(Emacs Lisp 組込み関数)
 
 基本
 全体を括弧で囲む
@@ -34,6 +36,7 @@ progn
 	(if hoge (progn (setq x 1) (setq y 2))
 					 (progn (setq x 0) (setq y 0)))
 					 -->もしhogeがnilでないなら、xに1、yに2を代入、nilならxに0、yに0を代入する
+
 cond
 要はif-elsif-end
 	例
@@ -80,16 +83,47 @@ defunで定義
 
 ドット対
 (x . y)
-	 リスト(アトムではない)
-(cons 1 2)
-			-->(1 . 2) 左:car部 右:cdr部
+リスト(アトムではない)
+左:car部 右:cdr部
+	 例
+	 (cons 1 2)
+	 			 -->(1 . 2)
 
 quote
 引数をそのまま返す(引数を評価しない)
 	例
 	(quote (1 . 2))
 				 -->(1 . 2)
-	(setq x '(0 . 1))　;;省略記法
-				-->(0 . 1)
-				(xに(0 . 1)が代入される)
+				 
+	(setq x '(0 . 1)) ; 省略記法
+	x
+		-->(0 . 1)
+		(xに(0 . 1)が代入される)
+
+リスト
+	例
+	(setq month '((1 . 睦月) . (2 . 如月)))
+	(car (car month))
+			 -->1
+	(cdr (car month))
+			 -->睦月
+	(car (cdr month))
+			 -->0
+	(cdr (cdr month))
+			 -->如月
+
+	(setq month1 '(睦月 . (如月 . (弥生 . (卯月))))) ; 純リスト
+	(car month1)
+			 -->睦月
+	(car (cdr month1))
+			 -->如月
+	(car (cdr (cdr month1)))
+			 -->弥生
+
+nil
+アトム(分解できないデータであるため)かつリスト(要素数0の純リスト)
+(atom nil) ;atomはアトムかどうかを判定する関数
+			-->t
+(listp nil) ;listpはリストかどうかを判定する関数
+			 -->t
 
