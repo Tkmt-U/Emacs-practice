@@ -2,7 +2,7 @@ http://www.haun.org/kent/lisp1/
 https://qiita.com/eggc/items/8722d8883ebf1d9446da
 http://www.math.s.chiba-u.ac.jp/%7Ematsu/lisp/emacs-lisp-intro-jp.html#SEC_Top
 
-書き方
+基本
 全体を括弧で囲む
 区切りは空白
 	例
@@ -53,12 +53,30 @@ let
 	(setq x 1)
 	x
 		-->1
-	(let (x)
-			 (setq x 0)
+	(let ((x 0) y)
+			 (setq y 10)
 		 	 x)
 				-->0
 	x
 		-->1
+
+	(let* ((x 2) (y x))
+				y)
+				-->2
+				(xに2を代入、xをyに代入)
+let*は、直前で定義したローカル変数を使うことができる
+
+関数
+defunで定義
+	例
+	(defun abs (x)
+				 (cond ((>= x 0) x)
+				 			 (t (- 0 x))))
+							 -->引数xの絶対値を求める関数absを定義
+	(abs 4)
+	-->4
+	(abs -2)
+	-->2
 
 ドット対
 (x . y)
