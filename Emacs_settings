@@ -15,7 +15,25 @@
 # 複数ファイルの同時編集、タブ表示
 # ウインドウの分割
 # ファイルツリーの表示
+  neotree
+  F8
+In neo-buffer--create:
+neotree.el:1357:42:Warning: assignment to free variable
+    `helm-split-window-inside-p'
+
+In neotree-collapse-all:
+neotree.el:2097:19:Warning: assignment to free variable
+    `list-of-expanded-folders'
+neotree.el:2097:19:Warning: reference to free variable
+    `list-of-expanded-folders'
+
+In end of data:
+neotree.el:2227:1:Warning: the following functions are not known to be
+    defined: projectile-project-buffers,
+    all-the-icons-icon-for-dir-with-chevron, all-the-icons-icon-for-file
+
 # インデントの可視化
+  https://github.com/zk-phi/indent-guide
 
 # やる気の出るカラースキームや背景画像
   deep-blue
@@ -36,9 +54,21 @@
   ここ参考に https://qiita.com/betweens/items/ae85bd9bcf8ae48ea7e2
   M-x minimap-mode で切り替え
 
+# dashboard
+  (起動画面の設定)
+  https://github.com/emacs-dashboard/emacs-dashboard
 
-https://github.com/emacs-dashboard/emacs-dashboard
+# emacs-which-key
+  (キーバインドの表示)
+  https://github.com/justbur/emacs-which-key
+
 https://github.com/abo-abo/hydra
+
+# バックスラッシュの入力設定
+  https://qiita.com/hirokisince1998/items/029741559d7ba7078523
+
+# カッコの自動挿入
+  M-x electric-pair-mode
 
 # rainbow-delimiters
   (括弧を色で区別化)
@@ -46,14 +76,46 @@ https://github.com/abo-abo/hydra
 
 # auto-complete
   https://www.hiroom2.com/2015/09/19/emacsのauto-completeパッケージの使い方/
+  https://github.com/auto-complete/auto-complete
+
+# ivy-rich
+  In toplevel form:
+  elpa.el:1:7:Warning: assignment to free variable `package-user-dir'
+
+  In toplevel form:
+  ivy-rich.el:54:1:Warning: defcustom for `ivy-rich-display-transformers-list'
+      fails to specify type
+  ivy-rich.el:54:1:Warning: defcustom for `ivy-rich-display-transformers-list'
+      fails to specify type
+
+  In ivy-rich-switch-buffer-root:
+  ivy-rich.el:410:17:Warning: reference to free variable
+      `ivy-rich-project-root-cache-mode'
+
+  In ivy-rich-set-display-transformer:
+  ivy-rich.el:627:15:Warning: `ivy-set-display-transformer' is an obsolete
+      function (as of <2020-05-20 Wed>); Use `ivy-configure'
+      :display-transformer-fn
+
+  In end of data:
+  ivy-rich.el:671:1:Warning: the following functions might not be defined at
+      runtime: project-roots, package-version-join
+  ivy-rich.el:671:1:Warning: the function `ffip-project-root' is not known to be
+      defined.
+
+markdown-mode
 
 ruby
 https://qiita.com/hiconyan/items/
 https://qiita.com/kod314/items/9a56983f0d70f57420b1
 http://blog.10rane.com/2014/09/01/set-up-ruby-mode-of-emacs/
 https://nantonaku-shiawase.hatenablog.com/entry/2016/01/19/223036
-xmpfilter
-what_methods
+  Smart Compile
+    (編集中のファイルをコンパイル/実行できる)
+    https://www.emacswiki.org/emacs/SmartCompile
+  xmpfilter
+  what_methods
+  rspec-mode
 
 python
 https://qiita.com/katsuNakajima/items/df4ace3c7b7078f5a530
@@ -62,3 +124,34 @@ https://github.com/palantir/python-language-server
 
 https://masutaka.net/chalow/2009-06-26-1.html
 http://www.haun.org/kent/lisp1/1.html
+
+Java
+meghanada
+
+In toplevel form:
+company-meghanada.el:296:1:Warning: Unused lexical variable `desc'
+company-meghanada.el:323:1:Warning: Unused lexical variable `anno'
+company-meghanada.el:346:1:Warning: Unused lexical variable `anno'
+company-meghanada.el:358:1:Warning: Unused lexical variable `anno'
+
+In toplevel form:
+eldoc-meghanada.el:36:1:Warning: Unused lexical variable `arg-index'
+eldoc-meghanada.el:66:1:Warning: Unused lexical variable `type'
+eldoc-meghanada.el:66:1:Warning: Unused lexical variable `meta'
+
+In toplevel form:
+flycheck-meghanada.el:76:1:Warning: Unused lexical variable `err'
+
+In toplevel form:
+meghanada.el:262:1:Warning: defcustom for `meghanada-mode-after-test-hook'
+    fails to specify type
+meghanada.el:262:1:Warning: defcustom for `meghanada-mode-after-test-hook'
+    fails to specify type
+
+In meghanada--what-line:
+meghanada.el:275:8:Warning: value returned from (+ n (line-number-at-pos
+    start) -1) is unused
+meghanada.el:401:1:Warning: Unused lexical argument `msg'
+meghanada.el:1573:1:Warning: Unused lexical variable `number'
+meghanada.el:1573:1:Warning: Unused lexical variable `number'
+meghanada.el:1710:1:Warning: Unused lexical variable `is-input'
