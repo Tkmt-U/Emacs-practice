@@ -148,6 +148,11 @@ nil
 			 -->t
 
 (defun my-length (L)
-			 (cond ((null L) 0)
-			 			 (t 1+ (my-length (cdr L)))))
+			 (cond ((null L) nil)
+			 			 (t (cons (length (car L)) (string-to-length (cdr L))))))
 (my-length month1)
+
+
+fizz-buzz
+
+
